@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example | Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+<style>
+    body{
+        background-color: #333;
+    }
+    .container{
+        width: 90%;
+        margin: 2% 2%;
+    }
+    .carousel img{
+        width: 100%;
+    }
+    .slick-prev::before{
+        content: "⇚";
+    }
+    .slick-next::before{
+        content: "⇛";
+    }
+    .slick-prev::before,.slick-next::before{
+        font-size: 30px;
+    }
+</style>
+
+</head>
+<body>
+    
+    <section class="container">
+        <div class="carousel">
+            <div><img src="https://i.picsum.photos/id/916/800/600.jpg?hmac=GCGmlmjCPGtCJ81Nu6aBLFlQO3ro2p288L5dMpwXd50" alt=""></div>
+            <div><img src="https://i.picsum.photos/id/0/800/600.jpg?hmac=qRIxZPb6D3nnquI4AQ4xTVwhTvVx1FL3Pdm29Jz61fQ" alt=""></div>
+            <div><img src="https://i.picsum.photos/id/233/800/600.jpg?hmac=k_Q8-FFTv7j0auzc9TUrpLxsAkW4r3xJTFdpFhacFUU" alt=""></div>
+          </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+  $('.carousel').slick({
+  });
+});
+    </script>
+</body>
+</html>
